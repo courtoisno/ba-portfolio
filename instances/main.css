@@ -1,0 +1,457 @@
+html{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: white;
+}
+
+html, body {
+   padding: 0;
+    margin: 0;
+
+}
+
+body {
+    opacity: 1;
+    transition: 2s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+a { 
+  color: inherit;
+  text-decoration: none;
+ }  
+p{
+	font-size: 40px;
+}
+.info{
+  width: 95%;
+  margin-left: 25px;
+  line-height: 1.2;
+}
+
+.hov:hover{
+  color: lightgray;
+}
+.main{
+      overflow-y: auto;
+}
+/* -----------------------------------  POST iT MAIN PAGE -----------------------------------  */
+.popupInfo{
+   background-color: lightgray;
+    /* bottom: 59px; */
+    height: 530px;
+    position: fixed;
+    width: 550px;
+    z-index: 20;
+
+}
+.popupInfo-Wrap {
+    word-wrap: break-word;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px 20px;
+font-weight: 400;
+}
+.closingInfo:before {
+    content: '\2715';
+    float: left;
+    margin: 0;
+    text-indent: 0;
+    font-size: 31.2px;
+  }
+.closingInfo {
+       position: relative;
+       left: calc( 72% + 110px );
+    top: 15px;
+    z-index: 100;
+    width: 32px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    /* right: 10px; */
+    /* top: 7px; */
+    cursor: pointer;
+  }
+
+.alex{
+  background-color: floralwhite;
+    bottom: 59px;
+    position: fixed;
+    top: 35%;
+    right: 70px;
+    /* bottom: 50px; */
+    width: 24%;
+    height: 46%;
+    z-index: 20;
+}
+
+.brad{
+  background-color: honeydew;
+    bottom: 59px;
+    position: fixed;
+  left: 41.8125px;
+    top: 69.7969px;
+    /* bottom: 50px; */
+    width: 24%;
+    height: 46%;
+    z-index: 20;
+}
+.popup {
+    background-color: rgb(255, 255, 86);
+    bottom: 59px;
+    position: fixed;
+    top: 15%;
+    left: 130px;
+    /* bottom: 50px; */
+    width: 24%;
+    height: 46%;
+    z-index: 20;
+}
+#popup3{
+    background-color: lightgray;
+    bottom: 59px;
+    position: fixed;
+    top: 15%;
+    left: 130px;
+    /* bottom: 50px; */
+    width: 24%;
+    height: 46%;
+    z-index: 20;
+}
+
+.popup-wrap {
+      word-wrap: break-word;
+    position: absolute;
+    /* font-size: 20px; */
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px 20px;
+  }
+
+.closebtn:before {
+    content: '\2715';
+    float: left;
+    margin: 0;
+    text-indent: 0;
+    font-size: 31.2px;
+  }
+.closebtn {
+       position: relative;
+    left: calc( 50% + 110px );
+    top: calc( -5% + 30px );
+    z-index: 100;
+    width: 32px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    /* right: 10px; */
+    /* top: 7px; */
+    cursor: pointer;
+  }
+
+  .closealex:before {
+    content: '\2715';
+    float: left;
+    margin: 0;
+    text-indent: 0;
+    font-size: 31.2px;
+  }
+.closealex {
+    position: relative;
+    left: calc( 50% + 110px );
+    top: calc( -5% + 30px );
+    z-index: 100;
+    width: 32px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    /* right: 10px; */
+    /* top: 7px; */
+    cursor: pointer;
+  }
+
+  .closebrad:before {
+    content: '\2715';
+    float: left;
+    margin: 0;
+    text-indent: 0;
+    font-size: 31.2px;
+  }
+.closebrad {
+    position: relative;
+    left: calc( 50% + 110px );
+    top: calc( -5% + 30px );
+    z-index: 100;
+    width: 32px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    /* right: 10px; */
+    /* top: 7px; */
+    cursor: pointer;
+  }
+
+.postit{
+  font-size: 25px;
+    line-height: 1.2;
+}
+#postit3{
+  font-size: 20px;
+    line-height: 1.2;
+}
+.postitPerso{
+  font-size: 20px;
+  line-height: 1.3;
+
+}
+#txtPostIt{
+
+}
+
+.persoLink:hover{
+  background-color: yellow;
+}
+
+.linav:hover{
+  background-color: yellow;
+  opacity: 70%;
+}
+
+.nav-list li{
+	 display: inline;
+    margin-right: 4.6875vw;
+}
+.nav-list {
+    text-align: center;
+    font-size: 40px;
+/*    text-transform: uppercase;
+*/    /* margin-bottom: 4.16667vw; */
+    /* margin-top: 4.6875vw; */
+    position: relative;
+    z-index: 20;
+    list-style: none;
+    margin: 20px;
+  }
+
+#contact:hover{
+  background-color: yellow;
+}
+
+/*#madeIn:hover + img{
+  display: block;
+  position: absolute;
+  max-width: 40%;
+  margin-left: 100px;
+} 
+*/
+
+.Al{
+  position: fixed;
+    z-index: 10;
+    /* position: absolute; */
+    top: 70px;
+    right: 0;
+    /* width: 40%; */
+}
+.Br{
+  position: fixed;
+    z-index: 10;
+    /* position: absolute; */
+    /* width: 40%; */
+        left: 193px;
+    top: 339px;
+}
+  
+.hoverim{
+  display: none
+}
+
+.picAlex{
+      border: 5px solid floralwhite;
+
+}
+
+.picBrad{
+      border: 5px solid honeydew;
+}
+
+.picBrad2{
+      border: 5px solid honeydew;
+         position: fixed;
+    z-index: 10;
+        left: 327px;
+    top: 18px;
+
+}
+
+
+.picBrad3{
+      border: 5px solid honeydew;
+    left: 468px;
+    top: 247px;
+    position: fixed;
+    z-index: 11;
+
+}
+.picBrad4{
+    border: 5px solid honeydew;
+    position: fixed;
+    z-index: 11;
+        left: -17px;
+    top: 389px;
+
+}
+
+.workss:hover + .hoverim{
+      display: initial;
+    /* width: 53%; */
+    /* top: -10px; */
+    position: absolute;
+    top: 0px;
+    right: 10px;
+/*    opacity: 0.8;
+*/    z-index: -10;
+/*    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;*/
+   
+  }
+
+.workss:hover + body{
+   background-color: black;
+}
+
+
+.work{
+      width: 100%;
+}
+.works{
+  font-size: 100px;
+  text-align: center;
+}
+.workss{
+    font-size: 100px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 20px;
+}
+#proj1{
+      margin-top: 40px;
+    margin-bottom: 40px;
+}
+#proj2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+#proj3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+#proj4{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+#proj5{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+#proj6{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+#proj7{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+#proj8{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+#proj9{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 3.5px solid black;
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 3.5px solid black;
+    left: 0;
+    background-color: white;
+    z-index: 30;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.foootertxt{
+    padding: 0;
+    margin: 0.5rem 0;
+/*    text-transform: uppercase;
+*/    font-size: 40px;
+}
+
+
+
+.back{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.projectsss{
+      width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+        overflow-y: scroll;
+}
+.contenu{
+  margin-left: 20px;
+}
+
+.titleproj{
+  position: absolute;
+    top: -25px;
+    left: 20px;
+    text-decoration: underline;
+}
+
+
+.all{
+    width:100%;
+    float:left;
+    text-align:center;
+}
+div.sub, iframe {
+    margin: 0 auto;
+}
+div.sub, img {
+    margin: 0 auto;
+}
+
+
